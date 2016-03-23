@@ -1,0 +1,43 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, main, nav, section { display:block; }
+html, body		{ width:100%; }
+ol, ul			{ list-style:none; }
+table			{ border-collapse:collapse; border-spacing:0; }
+blockquote, q	{ quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:""; content:none; }
+
+/* ----- Reset ----- */
+
+* { text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased !important; -moz-webkit-font-smoothing:antialiased !important; }
+body {
+    font-size:100%; line-height:100%; font-family:"Fira Sans", "Helvetica Neue", Arial, sans-serif;
+	word-wrap:break-word; -webkit-text-size-adjust:none; background-color:#fff; color:#333;
+}
+
+option			{ padding:8px; }
+select			{ height:100%; }
+textarea		{ resize:none; }
+[type=checkbox]	{ -webkit-appearance:checkbox;	-moz-appearance:checkbox;	}
+[type=radio]	{ -webkit-appearance:radio;		-moz-appearance:radio;		}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance:none; margin:0; }
+
+a		{ text-decoration:none; color:#666; }
+img		{ vertical-align:bottom;	}
+li		{ margin:8px 0 0 40px;	    }
+ul		{ list-style:disc;			}
+ol		{ list-style:decimal;		}
+em		{ font-style:italic;		}
+
+h1 { line-height:150%; font-size:32px; font-weight:600; text-align:center; }
+h2 { line-height:150%; font-size:18px; font-weight:300; text-align:center; letter-spacing:-1px; color:#666; }
+
+p { line-height:150%; font-size:24px; font-weight:300; }
+
+/* ----- Content ----- */
+
+.main { width:640px; margin:0 auto; padding:64px 20px; }
+
+/* ----- Extras ----- */
+
+.margin-top-32 { margin-top:32px; }
