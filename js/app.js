@@ -63,7 +63,7 @@ $(function(){
                         }
                     }, function(track) {
                         $(".status").html(
-                            "Uploaded! <a href='" + track.permalink_url + "' target='_blank'>" + track.title + "</a>"
+                            "Uploaded! <a href='" + track.permalink_url + "' target='_blank' title='" + track.title + "'>" + track.title + "</a>"
                         );
                     });
                 }
