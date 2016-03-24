@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="cache-control"	  content="no-cache">
+        <meta http-equiv="content-language"	  content="pt-br">
+        <meta http-equiv="revisit-after"	  content="7 days">
+        <meta http-equiv="X-UA-Compatible"    content="IE=Edge">
+
+        <meta name="robots"		  content="all">
+        <meta name="language"	  content="pt-br">
+        <meta name="generator"	  content="http://yuribrunetto.github.io/soundcloud-uploader">
+        <meta name="author"       content="http://yuribrunetto.github.io/soundcloud-uploader">
+        <meta name="viewport"     content="initial-scale=1, user-scalable=yes">
+        <meta name="webmaster"    content="Yuri Brunetto">
+
+        <meta property="og:site_name"			content="SoundCloud Uploader">
+        <meta property="og:locale:alternate"	content="pt_BR">
+        <meta property="og:type"				content="place">
+
         <title>SoundCloud Uploader</title>
+        <meta name="title"			content="SoundCloud Uploader">
+        <link type="image/x-icon"   rel="apple-touch-icon"  href="img/favicon.png">
+        <link type="image/x-icon"   rel="shortcut icon"     href="img/favicon.png">
+
+        <meta name="description" content="A simple SoundCloud recorder and uploader.">
+		<meta name="keywords"    content="soundcloud uploader, soundcloud, uploader, yuri brunetto">
+		<link rel="canonical"    href="http://yuribrunetto.github.io/soundcloud-uploader">
+
+		<meta property="og:title"		content="SoundCloud Uploader">
+		<meta property="og:description"	content="A simple SoundCloud recorder and uploader.">
+		<meta property="og:url"			content="http://yuribrunetto.github.io/soundcloud-uploader">
+
+        <meta property="og:site_name" content="SoundCloud Uploader">
+		<meta property="og:image"     content="img/favicon.png">
+
         <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
-        <script type="text/javascript" src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+        <script src="//connect.soundcloud.com/sdk.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </head>
 
@@ -16,12 +47,47 @@
         <main class="main">
             <header>
                 <h1>SoundCloud Uploader</h1>
-                <h2>a soundcloud thing created by Yuri Brunetto</h2>
-             </header>
+                <h2>
+                    a soundcloud thing created by <a href="http://www.ybrntt.com.br" title="Yuri Brunetto" target="_blank" style="text-decoration:underline;">Yuri Brunetto</a>
+                </h2>
+            </header>
 
-             <article class="margin-top-32">
+            <article class="margin-top-32">
                 <p>I decided to create this web-app only to test my knowledge skills using the SoundCloud API.</p>
-             </article>
+                <br>
+                <p>To start recording, just press the "start recording" button.</p>
+            </article>
+
+            <section class="margin-top-32">
+                <a href="javascript:;" title="Start recording" id="startRecording" class="a-btns bg-blue">
+                    Start recording
+                </a>
+                <a href="javascript:;" title="Stop recording" id="stopRecording" class="a-btns bg-red">
+                    Stop recording
+                </a>
+                <a href="javascript:;" title="Play" id="play" class="a-btns bg-asphalt">
+                    Play
+                </a>
+
+                <div class="timer">Duration: <span id="timer">0</span>s</div>
+
+                <form class="form">
+                    <input class="input" type="text" id="name" placeholder="Give a name to your audio">
+                    <div class="input margin-top-16">
+                        <input id="public" type="radio" name="privacy" value="public">
+                        <label for="public">public</label>
+
+                        <input id="private" type="radio" name="privacy" value="private" style="margin-left:16px;">
+                        <label for="private">private</label>
+                    </div>
+
+                    <a href="javascript:;" title="Upload to SoundCloud" id="upload" class="a-btns bg-orange margin-top-16">
+                        Upload to SoundCloud
+                    </a>
+                </form>
+
+                <div class="status margin-top-32"></div>
+            </section>
         </main>
 
     </body>
