@@ -52,6 +52,8 @@ p { line-height:150%; font-size:24px; font-weight:300; }
 .status { text-align:center; color:#666; }
 .status > a { color:#333; font-weight:bold; }
 
+.text-min { font-size:14px; color:#777; text-align:center; }
+
 /* ----- Extras ----- */
 
 .bg-blue { background-color:#4aa3df; }
